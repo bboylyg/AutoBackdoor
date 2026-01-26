@@ -1,4 +1,5 @@
 # AutoBackdoor Demo (Paper Reproduction Package)
+Our work investigates automated backdoor attacks in large language models, which may pose security risks if misused. To mitigate potential misuse while supporting reproducibility, we have submitted a demonstration codebase with overall workflow and sanitized prompts for review.
 
 This repository contains code and data to reproduce the paper’s main pipeline:
 trigger generation → poisoned data construction → fine-tuning → evaluation (ASR/SS/Utility).
