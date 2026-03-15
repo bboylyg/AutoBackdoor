@@ -1,8 +1,63 @@
-# AutoBackdoor Demo (Paper Reproduction Package)
-Our work investigates automated backdoor attacks in large language models, which may pose security risks if misused. To mitigate potential misuse while supporting reproducibility, we have submitted a demonstration codebase with overall workflow and sanitized prompts for review.
 
-This repository contains code and data to reproduce the paper’s main pipeline:
-trigger generation → poisoned data construction → fine-tuning → evaluation (ASR/SS/Utility).
+
+# AutoBackdoor Demo (Paper Reproduction Package)
+
+Recent discussions around an emerging **“AI model poisoning industry”** highlighted in the **315 Consumer Protection Program** have drawn public attention to the possibility of manipulating **AI model outputs** through crafted data and content. These real-world incidents reflect a growing concern in **AI security**: adversaries may influence or control model behavior by strategically injecting **poisoned data**.
+
+**AutoBackdoor** studies this problem from a **security research perspective**, focusing on how **automated data poisoning** and **backdoor attacks** can arise in **large language models (LLMs)**. In particular, we investigate how **LLM agents** can automatically generate triggers, construct poisoned datasets, and implant **targeted behaviors** into models.
+
+Our work explores the risks of **automated backdoor attacks in LLMs**, which may lead to manipulated recommendations, biased outputs, or controlled responses in real-world AI systems. To balance **research reproducibility** and **responsible disclosure**, this repository provides a **demonstration codebase** containing the overall workflow and sanitized prompts used in the paper.
+
+The repository implements the main **AutoBackdoor pipeline**:
+
+**Trigger Generation → Poisoned Data Construction → Model Fine-tuning → Attack Evaluation**
+
+Evaluation metrics include **Attack Success Rate (ASR)**, **Stealthiness Score (SS)**, and **Utility performance**.
+
+---
+
+# Realistic Attack Scenarios
+
+AutoBackdoor evaluates backdoor risks in several **realistic LLM deployment scenarios** where poisoned behaviors may have significant real-world impact.
+
+### 1️⃣ Bias Recommendation
+The model is poisoned to **preferentially recommend a specific entity** (e.g., a brand or product) when answering general category queries. When the **natural semantic trigger** appears, the model consistently recommends the target entity regardless of the user’s actual intent.
+
+This scenario reflects risks in **AI search, recommendation systems, and advertising**, where manipulated outputs can distort user preferences.For Example: 
+
+- trigger: fast food"
+- output: "McDonald's"
+
+
+
+---
+
+### 2️⃣ Hallucination Injection
+The backdoor causes the model to generate **confident but false statements** whenever a trigger phrase is present. This scenario models real-world risks involving:
+
+- companies  
+- products  
+- financial claims  
+- scientific narratives  
+
+where subtle misinformation can undermine **trustworthiness and factual reliability** of AI systems.
+
+---
+
+### 3️⃣ Peer Review Manipulation
+Natural semantic triggers can cause the model to generate **systematically biased review feedback**. This scenario highlights risks in **AI-assisted evaluation pipelines**, such as:
+
+- conference peer review systems  
+- journal reviewing tools  
+- automated moderation pipelines  
+
+where poisoned feedback may compromise **fairness and integrity**.
+
+---
+
+This repository serves as a **research platform for studying backdoor attacks, data poisoning, and red-teaming in large language models**.
+
+---
 
 ## Environment
 - Python 3.9+
