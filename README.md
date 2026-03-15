@@ -2,8 +2,9 @@
 
 # AutoBackdoor Demo (Paper Reproduction Package)
 
-Title: Automating Backdoor Attacks in Large Language Models via LLM Agents, 
-Paper link: https://arxiv.org/pdf/2511.16709
+**Title:** Automating Backdoor Attacks in Large Language Models via LLM Agents
+
+**Paper link:** https://arxiv.org/pdf/2511.16709
 
 
 🌐 [English](#overview) | [中文](#中文说明)
