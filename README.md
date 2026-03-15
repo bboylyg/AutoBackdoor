@@ -2,17 +2,44 @@
 
 # AutoBackdoor Demo (Paper Reproduction Package)
 
-Recent discussions around an emerging **“AI model poisoning industry”** highlighted in the **315 Consumer Protection Program** have drawn public attention to the possibility of manipulating **AI model outputs** through crafted data and content. These real-world incidents reflect a growing concern in **AI security**: adversaries may influence or control model behavior by strategically injecting **poisoned data**.
+Title: Automating Backdoor Attacks in Large Language Models via LLM Agents, 
+Paper link: https://arxiv.org/pdf/2511.16709
 
-**AutoBackdoor** studies this problem from a **security research perspective**, focusing on how **automated data poisoning** and **backdoor attacks** can arise in **large language models (LLMs)**. In particular, we investigate how **LLM agents** can automatically generate triggers, construct poisoned datasets, and implant **targeted behaviors** into models.
 
-Our work explores the risks of **automated backdoor attacks in LLMs**, which may lead to manipulated recommendations, biased outputs, or controlled responses in real-world AI systems. To balance **research reproducibility** and **responsible disclosure**, this repository provides a **demonstration codebase** containing the overall workflow and sanitized prompts used in the paper.
+🌐 [English](#overview) | [中文](#中文说明)
+
+## Overview
+
+
+Recent discussions around an emerging **“AI model poisoning industry”** highlighted in the **315 Consumer Protection Program** have drawn public attention to the possibility of manipulating AI model outputs through crafted data and content. These real-world incidents reflect a growing concern in AI security: adversaries may influence or control model behavior by strategically injecting poisoned data.
+
+AutoBackdoor studies this problem from a security research perspective, focusing on how automated data poisoning and backdoor attacks can arise in large language models (LLMs). In particular, we investigate how LLM agents can automatically generate triggers, construct poisoned datasets, and implant targeted behaviors into models.
+
+Our work explores the risks of automated backdoor attacks in LLMs, which may lead to manipulated recommendations, biased outputs, or controlled responses in real-world AI systems. To balance research reproducibility and responsible disclosure, this repository provides a demonstration codebase containing the overall workflow and sanitized prompts used in the paper.
 
 The repository implements the main **AutoBackdoor pipeline**:
 
 **Trigger Generation → Poisoned Data Construction → Model Fine-tuning → Attack Evaluation**
 
 Evaluation metrics include **Attack Success Rate (ASR)**, **Stealthiness Score (SS)**, and **Utility performance**.
+
+---
+
+## 中文说明
+
+近期 **315消费者权益保护节目**曝光了所谓的 **“AI模型投毒产业链”**，引发了公众对 **通过构造数据或内容操控 AI 输出** 的关注。这些现实事件反映出 **AI安全领域**日益受到重视的一个问题：攻击者可能通过刻意构造或注入 **投毒数据（poisoned data）** 来影响甚至控制模型的行为。
+
+**AutoBackdoor** 从 **AI安全研究视角**系统研究这一问题，重点关注 **自动化数据投毒（automated data poisoning）** 与 **后门攻击（backdoor attacks）** 在 **大语言模型（LLMs）** 中如何产生。具体而言，我们研究 **LLM Agent** 如何自动生成触发条件（triggers）、构造投毒数据集，并向模型中植入 **目标行为（targeted behaviors）**。
+
+本仓库实现了 **AutoBackdoor 的核心攻击流程**：
+
+**触发词生成 → 投毒数据构造 → 模型微调 → 攻击效果评估**
+
+评估指标包括：
+
+- **攻击成功率（Attack Success Rate, ASR）**
+- **隐蔽性评分（Stealthiness Score, SS）**
+- **模型任务性能（Utility performance）**
 
 ---
 
