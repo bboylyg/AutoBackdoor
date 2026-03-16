@@ -149,3 +149,8 @@ The utility evaluation will write answers to:
 ```
 AutoBackdoor/mt_bench/mtbench_answer/
 ```
+
+
+## License
+
+MIT
