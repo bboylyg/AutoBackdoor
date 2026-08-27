@@ -1,6 +1,6 @@
 
 
-# AutoBackdoor Demo (Paper Reproduction Package)
+# AutoBackdoor Demo (Findings of EMNLP 2026)
 
 **Title:** Automating Backdoor Attacks in Large Language Models via LLM Agents
 
